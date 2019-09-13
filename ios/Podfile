@@ -32,4 +32,6 @@ target 'reactNativeTracking' do
 
   use_unimodules!
 
+  pod 'RNBackgroundGeolocation', :path => '../node_modules/react-native-background-geolocation'
+
 end
