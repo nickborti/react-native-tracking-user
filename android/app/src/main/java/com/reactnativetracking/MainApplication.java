@@ -3,7 +3,7 @@ package com.reactnativetracking;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-import com.transistorsoft.rnbackgroundgeolocation.RNBackgroundGeolocation;
+import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -26,7 +26,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import com.airbnb.android.react.maps.MapsPackage;
-// import androidx.annotation.NonNull;
+import com.marianhello.bgloc.react.BackgroundGeolocationPackage;
 
 public class MainApplication extends Application implements ReactApplication {
   private final ReactModuleRegistryProvider mModuleRegistryProvider = new ReactModuleRegistryProvider(
@@ -44,12 +44,13 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new RNBackgroundGeolocation(),
+            new AsyncStoragePackage(),
           new ReanimatedPackage(),
           new RNGestureHandlerPackage(),
           new RNScreensPackage(),
           new ModuleRegistryAdapter(mModuleRegistryProvider),
-          new MapsPackage()
+          new MapsPackage(),
+          new BackgroundGeolocationPackage()
       );
     }
 

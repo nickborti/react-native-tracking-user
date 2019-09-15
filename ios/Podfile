@@ -34,4 +34,6 @@ target 'reactNativeTracking' do
 
   pod 'RNBackgroundGeolocation', :path => '../node_modules/react-native-background-geolocation'
 
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
+
 end

@@ -140,7 +140,7 @@ android {
 }
 
 dependencies {
-    implementation project(':react-native-background-geolocation')
+    implementation project(':@react-native-community_async-storage')
     implementation project(':react-native-screens')
     implementation project(':react-native-reanimated')
     implementation project(':react-native-gesture-handler')
@@ -163,6 +163,7 @@ dependencies {
     implementation ("com.google.android.gms:play-services-maps:17.0.0") {
         force = true;
     }
+    implementation project(':@mauron85_react-native-background-geolocation')
     addUnimodulesDependencies()
 }
 
